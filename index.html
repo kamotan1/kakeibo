@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>かけいぼ</title>
+    <title>きりかも食費フォーム</title>
 <!-- 送信後の移動 -->
     <script type="text/javascript">
     let submitted = false;
@@ -14,11 +14,23 @@
 </head>
 
 <body>
-    <h1>こんにちは</h1>
+    <h1>こんにちは。きりかも食費フォームです。</h1>
 		<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScPz94N6bLKGjWzGYbjMtmsWdhKzHh1IlYeKRvMY5y0NlXnsQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-			<label for="yen">￥</label><input type="text" name="entry.1092643544" id="yen" size="35" required><br>
-			<label for="omise">店</label><input type="radio" name="entry.1495552394" id="omise" required><br>
-			<label for="harattahito">払った人</label><br><input type="radio" name="entry.2059735619" id="harattahito" required><br>
+			<label for="yen">￥（半角数字）</label>
+				<input type="text" name="entry.1092643544" id="yen" size="35" required><br>
+
+			<label for="omise">お店</label>
+				<input type="radio" name="entry.1495552394" id="son" value="孫ちゃん" required><label for="son">孫ちゃん</label><br>
+				<input type="radio" name="entry.1495552394" id="rearea" value="レアレア" required><label for="rearea">レアレア</label><br>
+				<input type="radio" name="entry.1495552394" id="ropia" value="ロピア" required><label for="ropia">ロピア</label><br>
+				<input type="radio" name="entry.1495552394" id="ion" value="イオンリカー" required><label for="ion">イオンリカー</label><br>
+				<input type="radio" name="entry.1495552394" id="sawaya" value="さわやこぉひぃ" required><label for="sawaya">さわやこぉひぃ</label><br>
+				<input type="radio" name="entry.1495552394" id="delsol" value="デルソル" required><label for="delsol">デルソル</label><br>
+				<input type="radio" name="entry.1495552394" id="sonota" value="その他" required><label for="sonota">その他</label><br>
+
+			<label for="harattahito">払った人</label><br>
+				<input type="radio" name="entry.2059735619" id="kamo" value="かも" required><label for="kamo">かも</label><br>
+				<input type="radio" name="entry.2059735619" id="kiri" value="きり" required><label for="kiri">きり</label><br>
 
             <button type="submit" name="submit" value="送信">とうろく</button>
 		</form>
@@ -27,7 +39,7 @@
 		name="hidden_iframe"
 		id="hidden_iframe"
 		style="display: none"
-		onload="if(submitted){window.location='eraizo.html';}">
+		onload="if(submitted){window.location='https://kamotan1.github.io/kakeibo/eraizo.html';}">
         </iframe>
 
 </body>
