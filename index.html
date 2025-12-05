@@ -4,11 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Pages公開練習</title>
+    <title>かけいぼ</title>
+<!-- 送信後の移動 -->
+    <script type="text/javascript">
+    let submitted = false;
+    </script>
+<!-- 送信後の移動　ここまで -->
+
 </head>
 
 <body>
     <h1>こんにちは</h1>
+		<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScPz94N6bLKGjWzGYbjMtmsWdhKzHh1IlYeKRvMY5y0NlXnsQ/formResponse" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+			<label for="yen">￥</label><input type="text" name="entry.1092643544" id="yen" size="35" required><br>
+			<label for="omise">店</label><input type="radio" name="entry.1495552394" id="omise" required><br>
+			<label for="harattahito">払った人</label><br><input type="radio" name="entry.2059735619" id="harattahito" required><br>
+
+            <button type="submit" name="submit" value="送信">とうろく</button>
+		</form>
+		
+		<iframe
+		name="hidden_iframe"
+		id="hidden_iframe"
+		style="display: none"
+		onload="if(submitted){window.location='eraizo.html';}">
+        </iframe>
+
 </body>
 
 </html>
